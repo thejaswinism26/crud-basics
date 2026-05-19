@@ -40,6 +40,9 @@ class Marksupdate(db.Model):
 with app.app_context():
     db.create_all()
 
+@app.route('/')
+def home():
+    return redirect('/data')
 
 # CREATE
 @app.route('/data/create', methods=['GET', 'POST'])

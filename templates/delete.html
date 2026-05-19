@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='delete.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Delete Student</h1>
+
+    <p>
+        Are you sure you want to delete
+        <strong>{{ marksupdate.name }}</strong>?
+    </p>
+
+    <form method="POST">
+
+        <button type="submit">
+            Delete
+        </button>
+
+    </form>
+
+    <a href="/data">
+        Cancel
+    </a>
+
+</div>
+
+</body>
+</html>

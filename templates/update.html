@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+</head>
+<body>
+
+    <h1>Update Student</h1>
+
+    <form method="POST">
+
+        <label>Name:</label>
+        <input type="text"
+               name="name"
+               value="{{ marksupdate.name }}"
+               required>
+
+        <br><br>
+
+        <label>Marks:</label>
+        <input type="number"
+               name="marks"
+               value="{{ marksupdate.marks }}"
+               required>
+
+        <br><br>
+
+        <button type="submit">
+            Update Student
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/data">
+        Back to List
+    </a>
+
+</body>
+</html>

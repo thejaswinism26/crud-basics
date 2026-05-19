@@ -1,0 +1,50 @@
+body{
+    background: #ffe6e6;
+    font-family: Arial;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    width: 400px;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+button{
+    background: red;
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+a{
+    display: block;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+}

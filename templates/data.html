@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='data.css') }}">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Student Details</h1>
+
+    <p><strong>ID:</strong> {{ marksupdate.id }}</p>
+
+    <p><strong>Name:</strong> {{ marksupdate.name }}</p>
+
+    <p><strong>Marks:</strong> {{ marksupdate.marks }}</p>
+
+    <p><strong>Grade:</strong> {{ marksupdate.grade }}</p>
+
+    <br>
+
+    <a href="/data">Back to List</a>
+    </div>
+
+</body>
+</html>

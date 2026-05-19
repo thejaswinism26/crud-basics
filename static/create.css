@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to right, #667eea, white);
+    font-family: Arial;
+}
+
+form{
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 8px;
+}
+a{
+    display: block;
+    text-align: center;
+}

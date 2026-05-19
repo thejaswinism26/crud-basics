@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='datalist.css') }}">
+</head>
+<body>
+
+    <h1>Student Records</h1>
+
+    <a href="/data/create">Add New Student</a>
+
+    <br><br>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+
+        {% for student in marksupdate %}
+
+        <tr>
+
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.marks }}</td>
+            <td>{{ student.grade }}</td>
+
+            <td>
+
+                <a href="/data/{{ student.id }}">
+                    View
+                </a>
+
+                |
+
+                <a href="/data/{{ student.id }}/update">
+                    Update
+                </a>
+
+                |
+
+                <a href="/data/{{ student.id }}/delete">
+                    Delete
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
